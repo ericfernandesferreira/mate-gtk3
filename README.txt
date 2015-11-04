@@ -1,4 +1,4 @@
-Versão do Mate : 1.11.0 GTK3
+Versão do Mate : 1.12.0 GTK3
 Source do Mate : github
 
 Essa minha versão do mate é baseada na versão do Willysr
@@ -36,7 +36,7 @@ execute o script "sh post-config.sh" como USUÁRIO.
 
 _______________________________________________________________
 
-Mate Version : 1.11.0 GTK3
+Mate Version : 1.12.0 GTK3
 Mate Source : github
 
 My mate version is based on version of Willysr
