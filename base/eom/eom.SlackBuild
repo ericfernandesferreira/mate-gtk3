@@ -94,7 +94,6 @@ sh autogen.sh \
   --docdir=/usr/doc/$PRGNAM-$VERSION \
   --disable-python \
   --with-gtk=3.0 \
-  --without-help-dir \
   --build=$ARCH-slackware-linux
 
 # This is needed in -current, but should be harmless in -stable as well

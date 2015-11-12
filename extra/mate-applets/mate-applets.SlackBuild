@@ -90,9 +90,10 @@ sh autogen.sh \
   --mandir=/usr/man \
   --docdir=/usr/doc/$PRGNAM-$VERSION \
   --with-gtk=3.0 \
-  --disable-cpufreq \
+  --enable-polkit \
+  --enable-ipv6 \
+  --with-cpufreq-lib=cpufreq \
   --disable-static \
-  --without-help-dir \
   --build=$ARCH-slackware-linux
 
 make $NUMJOBS || make

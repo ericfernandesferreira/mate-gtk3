@@ -95,6 +95,7 @@ sh autogen.sh \
   --with-gtk=3.0 \
   --enable-upower \
   --without-systemd \
+  --disable-static \
   --build=$ARCH-slackware-linux
 
 make $NUMJOBS || make

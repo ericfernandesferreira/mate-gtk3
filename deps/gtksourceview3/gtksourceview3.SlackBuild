@@ -90,8 +90,8 @@ CXXFLAGS="$SLKCFLAGS" \
   --sysconfdir=/etc \
   --localstatedir=/var \
   --mandir=/usr/man \
-  --enable-glade-catalog \
   --docdir=/usr/doc/$PRGNAM-$VERSION \
+  --enable-glade-catalog \
   --build=$ARCH-slackware-linux
 
 # At the end of build process, the uninstalled gtksourceview.pc is

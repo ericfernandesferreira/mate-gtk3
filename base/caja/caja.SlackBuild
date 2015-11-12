@@ -89,6 +89,7 @@ sh autogen.sh \
   --disable-static \
   --libexecdir=/usr/lib${LIBDIRSUFFIX}/mate-file-manager \
   --disable-update-mimedb \
+  --enable-introspection \
   --build=$ARCH-slackware-linux
 
 make $NUMJOBS || make

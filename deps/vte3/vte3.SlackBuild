@@ -75,6 +75,9 @@ find -L . \
  \( -perm 666 -o -perm 664 -o -perm 640 -o -perm 600 -o -perm 444 \
  -o -perm 440 -o -perm 400 \) -exec chmod 644 {} \;
 
+# https://bugzilla.gnome.org/show_bug.cgi?id=663779
+patch -p1 < $CWD/fix_meta_alt_keybinding.patch
+
 # Configure:
 CFLAGS="$SLKCFLAGS" \
 ./configure \
@@ -85,8 +88,9 @@ CFLAGS="$SLKCFLAGS" \
   --docdir=/usr/doc/$PRGNAM-$VERSION \
   --disable-static \
   --enable-glade-catalogue \
-  --disable-test-application \
   --enable-introspection \
+  --without-pcre2 \
+  --enable-vala=no \
   --build=$ARCH-slackware-linux
 
 make -j5

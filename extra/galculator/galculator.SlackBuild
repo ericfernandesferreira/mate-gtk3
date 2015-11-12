@@ -40,8 +40,6 @@ if [ -z "$ARCH" ]; then
   esac
 fi
 
-NUMJOBS=${NUMJOBS:-" -j8 "}
-
 CWD=$(pwd)
 TMP=${TMP:-/tmp/msb}
 PKG=$TMP/package-$PRGNAM
@@ -90,7 +88,7 @@ sh autogen.sh \
   --enable-static=no \
   --build=$ARCH-slackware-linux
 
-make
+make -j5
 make install-strip DESTDIR=$PKG
 
 find $PKG -print0 | xargs -0 file | grep -e "executable" -e "shared object" | grep ELF \

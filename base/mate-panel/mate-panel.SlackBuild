@@ -89,11 +89,10 @@ sh autogen.sh \
   --localstatedir=/var \
   --mandir=/usr/man \
   --docdir=/usr/doc/$PRGNAM-$VERSION \
+  --libexecdir=/usr/lib${LIBDIRSUFFIX}/mate-panel \
   --with-gtk=3.0 \
   --disable-static \
-  --libexecdir=/usr/lib${LIBDIRSUFFIX}/mate-panel \
   --enable-introspection \
-  --without-help-dir \
   --build=$ARCH-slackware-linux
 
 make $NUMJOBS || make

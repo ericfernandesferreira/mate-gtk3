@@ -97,10 +97,10 @@ CXXFLAGS="$SLKCFLAGS" \
   --localstatedir=/var \
   --mandir=/usr/man \
   --docdir=/usr/doc/$PRGNAM-$VERSION \
-  --with-gtk=3.0 \
   --libexecdir=/usr/lib${LIBDIRSUFFIX}/mate-power-manager \
+  --with-gtk=3.0 \
   --enable-applets \
-  --without-help-dir \
+  --disable-static \
   --build=$ARCH-slackware-linux
 
 make $NUMJOBS || make

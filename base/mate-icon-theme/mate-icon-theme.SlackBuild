@@ -82,7 +82,6 @@ sh autogen.sh \
   --localstatedir=/var \
   --mandir=/usr/man \
   --docdir=/usr/doc/$PRGNAM-$VERSION \
-  --with-gtk=3.0 \
   --build=$ARCH-slackware-linux
 
 make $NUMJOBS || make

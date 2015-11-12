@@ -93,6 +93,7 @@ sh autogen.sh \
   --with-gtk=3.0 \
   --disable-static \
   --enable-mpaste \
+  --enable-introspection \
   --build=$ARCH-slackware-linux
 
 make $NUMJOBS || make
