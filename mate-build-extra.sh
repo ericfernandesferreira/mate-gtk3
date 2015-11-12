@@ -50,7 +50,6 @@ for dir in \
   extra/mate-utils \
   extra/mozo \
   extra/pluma \
-  extra/mate-system-tools \
   ; do
   # Get the package name
   package=$(echo $dir | cut -f2- -d /)

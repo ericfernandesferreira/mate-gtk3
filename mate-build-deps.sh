@@ -39,21 +39,18 @@ MSBROOT=$(pwd)
 
 # Loop for all dependency packages
 for dir in \
-  deps/vala \
-  deps/glade \
-  deps/vte3 \
   deps/exempi \
   deps/libgnomecanvas \
-  deps/libwnck3 \
   deps/zenity \
   deps/rarian \
   deps/yelp-xsl \
   deps/yelp-tools \
-  deps/libunique \
+  deps/libwnck3 \
   deps/libunique3 \
   deps/pangox-compat \
   deps/gtk-engines \
   deps/murrine \
+  deps/glade \
   deps/gtksourceview3 \
   deps/libgtop \
   deps/libgksu \
@@ -67,11 +64,7 @@ for dir in \
   deps/atkmm \
   deps/mm-common \
   deps/gtkmm3 \
-  deps/perl-xml-twig \
-  deps/perl-net-dbus \
-  deps/system-tools-backends \
-  deps/liboobs \
-  deps/docutils \
+  deps/vte3 \
   ; do
   # Get the package name
   package=$(echo $dir | cut -f2- -d /)
@@ -96,8 +89,6 @@ for dir in \
       exit 1
     fi
   fi
-# mv $PACKAGE /home/backup/app/slackware/mate/1.11/install/deps
-# mv $PACKAGE /home/backup/app/slackware/mate/1.11/install-jack/deps
   # back to original directory
   cd $MSBROOT
 done
